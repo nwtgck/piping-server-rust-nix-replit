@@ -1,0 +1,16 @@
+[package]
+name = "piping-server-rust-replit"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+piping-server = { git = "https://github.com/nwtgck/piping-server-rust", tag = "v0.8.4" }
+hyper = { version = "0.14", features = ["stream", "server", "http1"] }
+futures = { version = "0.3", default-features = false, features = ["std"] }
+structopt = "0.3"
+http = "0.2"
+tokio = { version = "1.9", features = ["rt-multi-thread", "macros"] }
+log = "0.4"
+env_logger = "0.9"
