@@ -6,7 +6,7 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-piping-server = { git = "https://github.com/nwtgck/piping-server-rust", tag = "v0.8.5"}
+piping-server = { git = "https://github.com/nwtgck/piping-server-rust", tag = "v0.10.0"}
 hyper = { version = "0.14", features = ["stream", "server", "http1"] }
 tokio = { version = "1.14", features = ["rt-multi-thread", "macros"] }
 log = "0.4"

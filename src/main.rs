@@ -17,7 +17,7 @@ async fn main() -> std::io::Result<()> {
     let http_svc = make_service_fn(|_| {
         let piping_server = piping_server.clone();
         let handler =
-            req_res_handler(move |req, res_sender| piping_server.handler(req, res_sender));
+            req_res_handler(move |req, res_sender| piping_server.handler(false, req, res_sender));
         async { Ok::<_, Infallible>(service_fn(handler)) }
     });
     let http_server = Server::bind(&([0, 0, 0, 0], http_port).into()).serve(http_svc);
