@@ -650,8 +650,8 @@ checksum = "8b870d8c151b6f2fb93e84a13146138f05d02ed11c7e7c54f8826aaaf7c9f184"
 
 [[package]]
 name = "piping-server"
-version = "0.10.0"
-source = "git+https://github.com/nwtgck/piping-server-rust?tag=v0.10.0#6c4b610c1960e03806a21a9000926debcd28fc80"
+version = "0.10.1"
+source = "git+https://github.com/nwtgck/piping-server-rust?tag=v0.10.1#3cdece38d800ed036409a0a4c2938bc72f61effc"
 dependencies = [
  "env_logger",
  "futures",
